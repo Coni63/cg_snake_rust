@@ -1,6 +1,11 @@
 [package]
 name = "cg_snake_rust"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+default-run = "cg_snake_rust"
 
 [dependencies]
+
+[profile.release]
+opt-level = 3
+debug = false
